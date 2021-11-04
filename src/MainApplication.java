@@ -1,5 +1,6 @@
 import resources.ControlResource;
 import resources.MediaResource;
+import resources.UsersResource;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -13,8 +14,9 @@ public class MainApplication extends Application
 
 	public MainApplication() {
 		resources.add(ControlResource.class);
+		resources.add(UsersResource.class);
 //		resources.add(MediaResource.class);
-		singletons.add( new MediaResource());
+//		singletons.add(new MediaResource());
 	}
 
 	@Override
